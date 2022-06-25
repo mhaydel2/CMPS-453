@@ -1,0 +1,37 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %} &spades; Harrison &spades; {% endblock %}
+
+{% block content %}
+<style>
+    .myDiv {
+        margin: 100px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+</style>
+
+<div class="container">
+    <h5>Name: Harrison</h5>
+    <h5>User type: Regular</h5>
+    <h5>Occupation: Athlete</h5>
+</div>
+
+<div class="container myDiv">
+    <h5>User Scenario: </h5>
+    <p>Scenario 1: Harrison is attempting to lose weight consistently for better performance in his sport by a certain day. He uses Everything Calculator to precisely measure how much weight per week / month to achieve goal on time.</p>
+    <p>Scenario 2: Harrison also needs assistance counting the specific calorie amount in each meal. Everything Calculator will assist with this as well.</p>
+    <br>
+    <br>
+    <h5>User Stories:</h5>
+    <p>Story 1: As an athlete, I need to lose 25 pounds by the end of the summer (3 months from current time in scenario), to improve performance.</p>
+    <p>Story 2: As an athlete, I need to maintain a cetain weight for boxing and want to have the exact calorie count of each meal.</p>
+</div>
+{% endblock %}

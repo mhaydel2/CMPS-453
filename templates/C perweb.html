@@ -1,0 +1,41 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %} &hearts; Penny &hearts; {% endblock %}
+
+{% block content %}
+<style>
+    .myDiv {
+        width: 800px;
+        height: 200px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    </style>
+<div><h5>Name: Penny</h5>
+    <h5>User type: Regular</h5>
+    <h5>Occupation: Worker/General Public</h5>
+</div>
+<div class=myDiv>
+    <h5>User Scenario: </h5>
+    <p>Scenario 1: Penny uses the app to calculate how much she should save per paycheck in the span of five months in order to afford a Nintendo Switch for her family member by Christmas.
+    </p>
+    <p>Scenario 2: Penny uses the app to calculate how much she should tip the waiter at the restaurant using a choice-base percentage and the total amount from the meal.
+        </p>
+    <br>
+    <br>
+    <h5>User Stories:</h5>
+    <p>Story 1: As a worker, I want to make sure I am saving at least the minimum amount per month in order to purchase an item in a set amount of time.
+        </p> 
+    <p>Story 2: As a part of the general public, I want an easy way to calculate tip percentage to pay my waiter.
+        </p>
+</div>
+{% endblock %}

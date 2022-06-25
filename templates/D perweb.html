@@ -1,0 +1,37 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %} &diams; Kim &diams; {% endblock %}
+
+{% block content %}
+<style>
+    .myDiv {
+        margin: 100px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+</style>
+
+<div class="container">
+    <h5>Name: Kim</h5>
+    <h5>User type: Regular</h5>
+    <h5>Occupation: College Student/General Public</h5>
+</div>
+
+<div class="container myDiv">
+    <h5>User Scenario: </h5>
+    <p>Scenario 1: Kim uses the app to gain a better understanding of how problems are solved. She does not find her current resources (teacher, notes, etc.) to be helpful, and would like a step-by-step explanation of the problem solving process.</p>
+    <p>Scenario 2: Kim uses the app to check her homework. Doing calculus problems can be a time-consuming process, which means that checking your work can take a bit of time as well. Kim uses this app after solving a problem to check if she computed the correct answer or not. This way, she can immediately move on to the next problem if an answer is correct.</p>
+    <br>
+    <br>
+    <h5>User Stories:</h5>
+    <p>Story 1: As a student, I need a way for complex processes and information to be simplified and explained in a way that I can understand.</p>
+    <p>Story 2: As a student, I want a way to easily check my work and see if my answers are correct.</p>
+</div>
+{% endblock %}

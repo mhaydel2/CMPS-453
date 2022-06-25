@@ -1,0 +1,57 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %} User Analysis {% endblock %}
+
+{% block content %}
+<style>
+    /* Modify the background color */
+    .button-custom1 {
+        background-color: #97D7C5;}
+</style>
+
+<div class="container">
+    <h3> User Segments</h3>
+    <p> There are two types of users for this app: regular and admin</p>
+    <ul>
+        <li><p> Regular user -  can use the app</p></li>
+        <li><p> Admin user - can use <em>and</em> edit the app</p></li>
+    </ul>
+</div>
+
+<div class="container">
+     <h3>User Stories</h3>
+     <p>Here's a list of links to our user's webpages:</p>
+     <p>
+        <a class="btn button-custom1 btn-lg" href="{% url 'A' %}" role="button">
+            Andrew</a> &emsp;
+        <a class="btn button-custom1 btn-lg" href="{% url 'B' %}" role="button">
+            Harrison</a> &emsp;
+        <a class="btn button-custom1 btn-lg" href="{% url 'C' %}" role="button">
+            Penny</a> &emsp;
+        <a class="btn button-custom1 btn-lg" href="{% url 'D' %}" role="button">
+            Kim</a> &emsp;
+    </p>
+</div>
+
+<div class="container">
+     <h3>Features</h3>
+     <ul>
+         <li><p> General Calculator for basic math</p></li>
+         <li><p> Advanced Math Calculator for calculus, differential equations, matrices, and more</p></li>
+         <li><p> Calculator for science and equation based calculations</p></li>
+         <li><p> Tip calculator</p></li>
+         <li><p> Weight tracker</p></li>
+         <li><p> Diet calculator for portion sizes</p></li>
+         <li><p> Day/Week/Month caloric tracker/calculator</p></li>
+         <li><p> Savings/Budgeting calculator</p></li>
+         <li><p> Access to history of calculations (weight loss, calories lost, previous math problems solved, etc.)</p></li>
+         <li><p> Customizable profile picture</p></li>
+         <li><p> Separate tabs for each type of calculator</p></li>
+    </ul>
+</div>
+{% endblock %}

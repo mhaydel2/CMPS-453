@@ -1,0 +1,87 @@
+{% extends "base_generic.html" %}
+
+{% block title %}About Everything Calculator{% endblock %}
+
+{% block content %}
+<style>
+    .small-middle-container{
+	margin: auto;
+	width: 80%;
+    }
+
+@media (min-width: 768px) {
+    .container-small {
+        width: 300px;
+    }
+    .container-large {
+        width: 970px;
+    } 
+} 
+@media (min-width: 992px) {
+    .container-small {
+        width: 500px;
+    }
+    .container-large {
+        width: 1170px;
+    } 
+} 
+@media (min-width: 1200px) {
+    .container-small {
+        width: 700px;
+    }
+    .container-large {
+        width: 1500px;
+    } 
+}
+
+.container-small, .container-large {
+    max-width: 100%;
+}
+</style>
+
+<div class = "row">
+    <div class = "container">
+        <div class="container small-middle-container" align = "center">
+            <br>
+            <p>Everything Calculator is a handy app that can perform a wide variety of calculations. From complex math equations to calorie intake to tips to budgeting, this calculator assists with it all. As a general purpose, multi-functional calculator, Everything Calculator is a tool that anyone can find a use for.</p>
+            <p>On the subject of math, Everything Calculator can assist you with calculus, geometry, algebra, trigonometry, and more. If interested in dieting or calorie consumption, this app can provide guidance on the amount of calories needed to lose, gain, or maintain weight. At a restaurant with friends and trying to figure out how much to leave as a tip or how to split the bill? Everything Calculator has functions for that, too. Trying to save money for something? Use the app to figure out how much money you should put away each week or month. These, along with many more functions, make Everything Calculator an extremely handy tool for a variety of everyday activities.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class = "row">
+            <div class = "col">
+                <h4>Vision Statement</h4>
+                <p>For high school students, college students, workout enthusiasts, and the general public who are in need of
+                mathematical calculation help, Everything Calculator is a multi-purpose calculator app that allows users to calculate
+                many different types of math-based problems. Unlike sites like Wolfram Alpha, our product allows users to calculate
+                more than just math problems, such as dietary calculations, weight loss calculations, and tip/financial calculations. </p>
+            </div>
+            <div class = "col">
+                <h4>Expected Users</h4>
+                <p>Our target audience for Everything Calculator are high school to college level students, those who need help with dietary
+                calculations (caloric intake, weight tracking, etc.), or those who need quick and simple calculations done (tips, basic math, etc.)</p>
+            </div>
+            <div class = "col">
+                <h4>User Benefits</h4>
+                <p>Our users will gain access to a general use calculator for basic calculations (addition, subtraction, etc.), more advanced
+                mathematical options (calculus, algebra, geometry, etc.), tip and financial calculators, and health tracking calculators
+                (daily/weekly/monthly caloric intake, weight loss calculations, etc.). </p>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <ul style = "list-style: none" class = "float-right">
+        <li>
+            <a href="{% url 'team' %}">
+                Our Team</a> &emsp;</li>
+        <li>
+            <a href="{% url 'user_anly' %}">
+                User Analysis</a> &emsp;</li>
+        <li>
+            <a href="{% url 'ui_design' %}">
+                UI Design</a> &emsp;</li>
+    </ul>
+</div>
+{% endblock %}

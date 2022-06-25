@@ -1,0 +1,30 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block content %}
+<style>
+    /* Modify the background color */
+     
+    .button-custom {
+        background-color: #8CC1B2;}
+    .button-custom1 {
+        background-color: #97D7C5;}
+</style>
+
+<main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">
+                The Everything Calculator
+                <img src="{% static 'img/product_icon.png' %}" alt="icon" style="width:125px;height:125px;"/>
+            </h1>
+            <p>General use calculator to utilize for everyday activities.</p>
+            <p>
+                <a class="btn button-custom1 btn-lg" href="{% url 'about' %}" role="button">
+                Learn more &raquo;</a>
+            </p>
+            </div>
+    </div>
+</main>
+{% endblock %}

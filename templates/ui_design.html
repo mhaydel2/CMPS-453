@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block title %}UI Design{% endblock %}
+
+{% block content %}
+<style>
+    /* Modify the background color */
+    .button-custom1 {
+        background-color: #97D7C5;}
+    .myDiv {
+        text-align: center;}
+</style>
+
+<div class="container">
+    <p class="myDiv">
+        <a class="btn button-custom1 btn-lg" href="{% url 'wireframe_page' %}" role="button">
+            Wireframes</a> &emsp;
+        <a class="btn button-custom1 btn-lg" href="{% url 'user_flow_page' %}" role="button">
+            User Flow Diagram</a> &emsp;
+    </p>
+</div>
+{% endblock %}

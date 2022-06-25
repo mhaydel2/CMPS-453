@@ -1,0 +1,38 @@
+{% extends "base_generic.html" %}
+{% load static %}
+<head>
+{% block title %}Wireframes{% endblock %}
+</head>
+{% block content %}
+<style>
+    /* Modify the background color */
+    .button-custom1 {
+        background-color: #97D7C5;}
+    .myDiv {
+        text-align: center;}
+    .buttonAlignment {
+        margin-left: 0px;
+        margin-top: 0px;}
+</style>
+
+<div class="container">
+    <div>
+        <a class="btn button-custom1 btn-lg buttonAlignment" href="{% url 'ui_design' %}" role="button">
+            Back</a> &emsp;
+    </div>
+    <div class="myDiv">
+        <img src="{% static 'wf-imgs/Home Page.jpg' %}" alt="homepg"/>
+        <img src="{% static 'wf-imgs/About_Page.png' %}" alt="aboutpg"/>
+        <img src="{% static 'wf-imgs/Basic_Calculator_Page.png' %}" alt="basicpg"/>
+        <img src="{% static 'wf-imgs/Basic_Calculator_After_Result.png' %}" alt="basicARpg"/>
+        <img src="{% static 'wf-imgs/Advanced_Calculator_Page.png' %}" alt="advpg"/>
+        <img src="{% static 'wf-imgs/Advanced_Calculator_After_Result.png' %}" alt="advARpg"/>
+        <img src="{% static 'wf-imgs/Tip_Calculator_After_Result.png' %}" alt="tippg"/>
+        <img src="{% static 'wf-imgs/Finance.png' %}" alt="finpg"/>
+        <img src="{% static 'wf-imgs/weight.png' %}" alt="weightpg"/>
+        <img src="{% static 'wf-imgs/Profile-Login.png' %}" alt="prfLpg"/>
+        <img src="{% static 'wf-imgs/Profile-Register.png' %}" alt="prfRpg"/>    
+    
+    </div>
+</div>
+{% endblock %}

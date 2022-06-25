@@ -1,0 +1,41 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %} &starf; Andrew &starf; {% endblock %}
+
+{% block content %}
+<style>
+    .myDiv {
+        width: 800px;
+        height: 200px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    </style>
+<div><h5>Name: Andrew</h5>
+    <h5>User type: Admin</h5>
+    <h5>Occupation: Computer Scientist/Mathematician</h5>
+</div>
+<div class=myDiv>
+    <h5>User Scenario: </h5>
+    <p>Scenario 1: Andrew uses the app to refine equations and add new ones to allow the other users a better and more versatile experience.
+    </p>
+    <p>Scenario 2: Andrew uses the app to design a user-frienly UI to make the average user's experience more convenient.
+        </p>
+    <br>
+    <br>
+    <h5>User Stories:</h5>
+    <p>Story 1: As a mathematician, I want to make sure that everyone who uses the app gains access to accurate and precise calculations they can rely on as well as having a plethora of different equations that suit their needs.
+        </p> 
+    <p>Story 2: As a computer scientist, I want to make the user's experience on the app easy and reliable by providing a frieldy UI that clearly labels everything a user would need while accessing the app and making calculations.
+        </p>
+</div>
+{% endblock %}

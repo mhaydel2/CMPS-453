@@ -1,0 +1,67 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block title %} Meet our team {% endblock %}
+
+{% block content %}
+<div class="container mt-40">
+    <div class="row mt-30">
+        <div class="col-md-3 col-sm-6">
+            <div class="box15">
+                <img src="{% static 'img/user_icon_a.png' %}" alt="user" />
+                <div class="box-content">
+                    <h3 class="title">Austin</h3>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="post">Team Lead (Team Member A)</span>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="box15">
+                <img src="{% static 'img/user_icon_b.png' %}" alt="user" />
+                <div class="box-content">
+                    <h3 class="title">Ryan</h3>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="post">Team Member B</span>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="box15">
+                <img src="{% static 'img/user_icon_c.png' %}" alt="user" />
+                <div class="box-content">
+                    <h3 class="title">Milan</h3>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="post">Team Member C</span>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="box15">
+                <img src="{% static 'img/user_icon_d.png' %}" alt="user" />
+                <div class="box-content">
+                    <h3 class="title">Caroline</h3>
+                    <ul class="icon">
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-gitlab"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="post">Team Member D</span>
+        </div>
+    </div>
+</div>
+{% endblock %}

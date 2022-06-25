@@ -1,0 +1,27 @@
+{% extends "base_generic.html" %}
+{% load static %}
+<head>
+{% block title %}User Flow Diagram{% endblock %}
+</head>
+{% block content %}
+<style>
+    /* Modify the background color */
+    .button-custom1 {
+        background-color: #97D7C5;}
+    .myDiv {
+        text-align: center;}
+    .buttonAlignment {
+        margin-left: 0px;
+        margin-top: 0px;}
+</style>
+
+<div class="container">
+    <div>
+        <a class="btn button-custom1 btn-lg buttonAlignment" href="{% url 'ui_design' %}" role="button">
+            Back</a> &emsp;
+    </div>
+    <div class="myDiv">
+        <img src="{% static 'ui-img/User Flow Chart.jpg' %}" alt="cat" style="width:600px;height:600px;">
+    </div>
+</div>
+{% endblock %}
